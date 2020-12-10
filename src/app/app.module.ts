@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { EditAppComponent } from './edit-app/edit-app.component';
 import { DndModule } from 'ngx-drag-drop';
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
+import { DropAreaComponent } from './drop-area/drop-area.component';
 
 const appRoutes: Routes = [
   { path: '', component: EditAppComponent },
@@ -15,7 +16,8 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    EditAppComponent
+    EditAppComponent,
+    DropAreaComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
